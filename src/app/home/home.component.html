@@ -1,3 +1,62 @@
-<p>
-  home works!
-</p>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile colspan="2" class="col1">
+    <div>
+      <div><strong>Profesionalne webstranice</strong></div>
+      <div>Angular+Material, CSS, HTML...<img src="../../assets/images/lap.jpeg" align="center" class="slika"/></div>
+      <div>
+        <button color="primary" mat-button mat-raised-button routerLink="/contact">
+          Kontakt
+        </button>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile class="col2">
+    <div>
+      <div><strong>CMS webstranice za Igre (Clan/Guild)</strong></div>
+      <div>Webstranice sa .tk(free) ili .com domenom za vas clan/guild<img src="../../assets/images/home-gamer.png" align="center" class="slika"/></div>
+      <div>
+      <button color="primary" mat-button mat-raised-button routerLink="/contact">
+        Naruci
+      </button>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <div><strong>Shoutcast internet radio</strong></div>
+      <div>Internet radio za svakoga po povoljnim cijenama<img src="../../assets/images/scr.png" align="center" class="slika"/></div>
+      <div>
+        <button color="primary" mat-button mat-raised-button routerLink="/contact">
+          Naruci
+        </button>
+        <button mat-raised-button color="warn" (click)="triggerState = !triggerState">Više</button>
+        <div [@tdFadeInOut]="triggerState">
+          <mat-card>
+            <mat-card-title>Shoutcast</mat-card-title>
+            <mat-card-content class="tablica">
+              <td-virtual-scroll-container [style.height.px]="400" [data]="data" [trackBy]="trackByFn">
+                <ng-template let-row="row"
+                             let-index="index"
+                             let-first="first"
+                             let-last="last"
+                             let-odd="odd"
+                             let-even="even"
+                             tdVirtualScrollRow>
+              <td-data-table
+                [data]="basicData"
+                [columns]="configWidthColumns">
+                <ng-template tdDataTableTemplate="img" let-value="value">
+                  <img [src]="value"/>
+                </ng-template>
+              </td-data-table>
+                  {{row}}
+                </ng-template>
+              </td-virtual-scroll-container>
+            </mat-card-content>
+            <mat-card-actions><button mat-raised-button color="primary" (click)="triggerState = !triggerState">Izlaz</button></mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

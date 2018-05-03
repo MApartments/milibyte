@@ -1,0 +1,37 @@
+<mat-card fxLayout="row" fxLayoutAlign="center start">
+  <div class="form"
+       fxFlex="500px"
+       fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-form-field>
+      <input matInput placeholder="Ime i prezime">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Tvrtka/Firma">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [formControl]="emailFormControl"
+             [errorStateMatcher]="matcher">
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Molimo unesite valjanu email adresu
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email je <strong>obavezan</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Odaberite uslugu" [formControl]="productControl" required [(ngModel)]="product">
+        <mat-option>--</mat-option>
+        <mat-option *ngFor="let product of products" [value]="product">
+          {{product.name}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="productControl.hasError('required')">Molimo odaberite uslugu</mat-error>
+      <mat-hint>{{productControl.value?.price}}</mat-hint>
+    </mat-form-field>
+    <button mat-button mat-raised-button color="primary">Send</button>
+  </div>
+</mat-card>
+
+<div *ngIf="product?.name === 'Professional website'">asdsdad</div>
+<div *ngIf="product?.name === 'Gaming website'">qwerqw</div>
+<div *ngIf="product?.name === 'Shoutcast radio'">zcvv</div>

@@ -1,0 +1,15 @@
+.col1 {
+  background-image: url("../../assets/images/nbg.jpg");
+  color: white;
+  font-size: large;
+}
+.slika {
+  max-width: 300px;
+  max-height: 100px;
+  border: aliceblue solid 1px;
+  border-radius: 15px;
+}
+.tablica {
+  max-width: 600px;
+  max-height: 200px;
+}

@@ -1,3 +1,13 @@
-<p>
-  header works!
-</p>
+<mat-toolbar color="primary" class="header mat-elevation-z6">
+  <button mat-button routerLink="/home">Home</button>
+  <button mat-button [matMenuTriggerFor]="menu">Usluge</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Profesionalni web</button>
+    <button mat-menu-item>Gaming web</button>
+    <button mat-menu-item>Shoutcast Radio</button>
+    <button mat-menu-item>SSL Certifikati</button>
+    <button mat-menu-item>Web hosting</button>
+  </mat-menu>
+  <button mat-button routerLink="/contact">Kontakt</button>
+  <button mat-button>O nama</button>
+</mat-toolbar>

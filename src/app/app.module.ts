@@ -7,6 +7,8 @@ import {MatButtonModule} from '@angular/material';
 import {HomeModule} from './home/home.module';
 import {LayoutModule} from './layout/layout.module';
 import {AppRoutingModule} from './app-routing.module';
+import {ContactModule} from './contact/contact.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 @NgModule({
@@ -17,8 +19,13 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserModule,
     MatButtonModule,
     HomeModule,
+    ContactModule,
     LayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule,
+  ],
+  exports: [
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
