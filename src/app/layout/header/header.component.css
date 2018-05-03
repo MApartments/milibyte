@@ -3,3 +3,7 @@
   font-size: 14px;
   font-weight: 500;
 }
+.zastava {
+  max-height: 40px;
+  max-width: 40px;
+}

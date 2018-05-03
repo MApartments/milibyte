@@ -4,8 +4,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatDividerModule, MatMenuModule, MatTabsModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatDividerModule, MatIconModule, MatMenuModule, MatTabsModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -17,6 +18,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatTabsModule,
     BrowserAnimationsModule,
     MatMenuModule,
+    MatIconModule,
+    FlexLayoutModule,
   ],
   exports: [
     MainLayoutComponent

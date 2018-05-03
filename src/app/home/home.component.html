@@ -4,7 +4,7 @@
       <div><strong>Profesionalne webstranice</strong></div>
       <div>Angular+Material, CSS, HTML...<img src="../../assets/images/lap.jpeg" align="center" class="slika"/></div>
       <div>
-        <button color="primary" mat-button mat-raised-button routerLink="/contact">
+        <button color="warn" mat-button mat-raised-button routerLink="/contact">
           Kontakt
         </button>
       </div>
@@ -13,7 +13,9 @@
   <mat-grid-tile class="col2">
     <div>
       <div><strong>CMS webstranice za Igre (Clan/Guild)</strong></div>
-      <div>Webstranice sa .tk(free) ili .com domenom za vas clan/guild<img src="../../assets/images/home-gamer.png" align="center" class="slika"/></div>
+      <div>Webstranice sa .tk(free) ili .com domenom za vas clan/guild
+        <p><img src="../../assets/images/home-gamer.png" align="center" class="slika"/></p>
+      </div>
       <div>
       <button color="primary" mat-button mat-raised-button routerLink="/contact">
         Naruci
@@ -24,39 +26,18 @@
   <mat-grid-tile>
     <div>
       <div><strong>Shoutcast internet radio</strong></div>
-      <div>Internet radio za svakoga po povoljnim cijenama<img src="../../assets/images/scr.png" align="center" class="slika"/></div>
+      <div>Internet radio za svakoga po povoljnim cijenama
+        <p><img src="../../assets/images/scr.png" align="center" class="slika"/></p>
+      </div>
       <div>
         <button color="primary" mat-button mat-raised-button routerLink="/contact">
           Naruci
         </button>
-        <button mat-raised-button color="warn" (click)="triggerState = !triggerState">Više</button>
-        <div [@tdFadeInOut]="triggerState">
-          <mat-card>
-            <mat-card-title>Shoutcast</mat-card-title>
-            <mat-card-content class="tablica">
-              <td-virtual-scroll-container [style.height.px]="400" [data]="data" [trackBy]="trackByFn">
-                <ng-template let-row="row"
-                             let-index="index"
-                             let-first="first"
-                             let-last="last"
-                             let-odd="odd"
-                             let-even="even"
-                             tdVirtualScrollRow>
-              <td-data-table
-                [data]="basicData"
-                [columns]="configWidthColumns">
-                <ng-template tdDataTableTemplate="img" let-value="value">
-                  <img [src]="value"/>
-                </ng-template>
-              </td-data-table>
-                  {{row}}
-                </ng-template>
-              </td-virtual-scroll-container>
-            </mat-card-content>
-            <mat-card-actions><button mat-raised-button color="primary" (click)="triggerState = !triggerState">Izlaz</button></mat-card-actions>
-          </mat-card>
-        </div>
       </div>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
+<mat-card class="hosting">
+  <img src="../../assets/images/hosting.png" style="float:left" align="center"/><strong>Web hosting s hrvatskim data centrom</strong><p>Web hosting uključujući 1 domenu(.com) free, 2 MySQL baze, Cpanel, neograničen mjesečni promet, besplatan SSL certifikat, neograničene email adrese i FTP accountovi...</p>
+  <button mat-button color="warn" mat-raised-button>Više</button>
+</mat-card>

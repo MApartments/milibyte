@@ -9,6 +9,7 @@ import {LayoutModule} from './layout/layout.module';
 import {AppRoutingModule} from './app-routing.module';
 import {ContactModule} from './contact/contact.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {UslugeModule} from './usluge/usluge.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatButtonModule,
     HomeModule,
     ContactModule,
+    UslugeModule,
     LayoutModule,
     AppRoutingModule,
     FlexLayoutModule,

@@ -1,7 +1,10 @@
 .col1 {
-  background-image: url("../../assets/images/nbg.jpg");
+  background: linear-gradient(to top, cornflowerblue , darkslateblue);
   color: white;
   font-size: large;
+}
+.col2 {
+
 }
 .slika {
   max-width: 300px;
@@ -9,7 +12,8 @@
   border: aliceblue solid 1px;
   border-radius: 15px;
 }
-.tablica {
-  max-width: 600px;
-  max-height: 200px;
+.hosting {
+  background-color: cornflowerblue;
+  color: white;
+  min-height: 200px;
 }

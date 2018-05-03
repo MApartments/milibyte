@@ -1,9 +1,13 @@
 .footer {
-  margin-top: 30px;
   min-height: 200px;
-  background-color: white;
+  background: linear-gradient(darkslateblue , cornflowerblue, white);
+  color: white;
 }
 .separator-line {
   height: 2px;
   background-color: blue;
 }
+.buttons-tab  button:hover {
+  color: orangered;
+}
+
