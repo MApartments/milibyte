@@ -1,6 +1,6 @@
 .footer {
   min-height: 200px;
-  background: linear-gradient(darkslateblue , cornflowerblue, white);
+  background-color: grey;
   color: white;
 }
 .separator-line {
