@@ -8,13 +8,64 @@
 
 }
 .slika {
-  max-width: 300px;
-  max-height: 100px;
+  max-width: 302px;
+  max-height: 82px;
   border: aliceblue solid 1px;
   border-radius: 15px;
+}
+.scslika {
+  max-width: 302px;
+  max-height: 82px;
 }
 .hosting {
   background-color: cornflowerblue;
   color: white;
   min-height: 200px;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}
+.shout2 {
+  border-radius: 15px;
+  background-color: orange;
+  max-width: 300px;
+}
+.shout1 {
+  border-radius: 15px;
+  background-color: lightskyblue;
+  max-width: 300px
+}
+.game1 {
+  border-radius: 15px;
+  background-color: orange;
+  max-width: 300px;
+  color: white;
+}
+.game2 {
+  border-radius: 15px;
+  background-image: url("../../assets/images/camo.png");
+  max-width: 300px;
+  color: white;
+}
+.tablica {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: honeydew;
+}
+.mat-list {
+  color: white;
 }
