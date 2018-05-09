@@ -1,13 +1,15 @@
 <mat-grid-list cols="2" rowHeight="1:1">
   <mat-grid-tile colspan="2" class="mat-elevation-z8 col1">
+    <div fxLayout="row" fxLayoutAlign="space-between end">
+      <mat-card class="vrh-card">
+        <strong><h1 class="naslov">Profesionalne webstranice</h1></strong>
+        <h2 class="naslov">Angular+Material, CSS, HTML...</h2><img src="../../assets/images/lap.jpeg" align="center" class="laptop"/>
+        <p><button color="warn" mat-raised-button routerLink="/contact">Kontakt</button></p>
+      </mat-card>
+    </div>
     <div>
-      <div><strong><h1>Profesionalne webstranice</h1></strong></div>
-      <div><h2>Angular+Material, CSS, HTML...</h2><img src="../../assets/images/lap.jpeg" align="center" class="slika"/></div>
-      <div>
-        <button color="warn" mat-raised-button routerLink="/contact">
-          Kontakt
-        </button>
-      </div>
+      <button class="waccap" mat-fab mat-raised-button></button>
+      <button class="youtube" mat-fab mat-raised-button></button>
     </div>
   </mat-grid-tile>
   <mat-grid-tile class="col2">
@@ -58,7 +60,7 @@
     <div>
       <div><strong><h1>Shoutcast internet radio</h1></strong></div>
       <h2>Internet radio za svakoga po povoljnim cijenama</h2>
-      <div fxLayout="row" fxLayoutAlign="space-evenly"><mat-card class="mat-elevation-z9 shout1">
+      <div fxLayout="row" fxLayoutAlign="space-evenly" fxLayout.xs="column"><mat-card class="mat-elevation-z9 shout1">
         <span class="text-upper"><img src="../../assets/images/scr.png" align="center" class="scslika"/></span>
         <mat-card-subtitle align="center"><h1>Beginner Shoutcast</h1></mat-card-subtitle>
         <mat-divider></mat-divider>

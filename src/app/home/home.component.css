@@ -4,8 +4,11 @@
   color: white;
   font-size: large;
 }
-.col2 {
-
+.laptop {
+  max-width: 600px;
+  max-height: 382px;
+  border: aliceblue solid 1px;
+  border-radius: 15px;
 }
 .slika {
   max-width: 302px;
@@ -68,4 +71,27 @@ tr:nth-child(even) {
 }
 .mat-list {
   color: white;
+}
+.waccap {
+  position: absolute;
+  top: 270px;
+  right: 15px;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("../../assets/images/wac.png");
+}
+.youtube {
+  position: absolute;
+  top: 350px;
+  right: 15px;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("../../assets/images/you.png");
+}
+.naslov {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.vrh-card {
+  background:rgba(255,255,255,0.2);
 }
