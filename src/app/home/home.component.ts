@@ -29,6 +29,24 @@ export class HomeComponent implements OnInit {
     {name: 'Hrvatski data centar'},
     {name: 'Administracijski web panel'},
   ];
+  host1s = [
+    {name: 'Free domena (.TK /.ML /.GA /.CF /.GQ)'},
+    {name: 'Neograničen mjesečni promet'},
+    {name: 'Joomla/Wordpress/..'},
+    {name: 'CoD,WoW,Battlefield,..'},
+    {name: 'Plugin po želji'},
+    {name: 'Hrvatski data centar'},
+    {name: 'Administracijski web panel'},
+  ];
+  host2s = [
+    {name: 'Domena (.COM /.NET /.ORG /.INFO)'},
+    {name: 'Neograničen mjesečni promet'},
+    {name: 'Joomla/Wordpress/HTML/..'},
+    {name: 'CoD,WoW,Battlefield,..'},
+    {name: 'Logo, Banner, plugin po želji'},
+    {name: 'Hrvatski data centar'},
+    {name: 'Administracijski web panel'},
+  ];
   constructor() {}
 
   ngOnInit() {

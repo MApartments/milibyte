@@ -13,15 +13,15 @@
   <mat-grid-tile class="col2">
     <div>
       <div><strong><h1>Gaming Website</h1></strong></div>
-      <h2>Gamin website za svakoga za vas clan/guild</h2>
+      <h2>Gamin website za vas clan/guild</h2>
       <div fxLayout="row" fxLayoutAlign="space-evenly"><mat-card class="mat-elevation-z9 game1">
         <span class="text-upper"><img src="../../assets/images/rookie.png" align="center" class="scslika"/></span>
         <mat-card-subtitle align="center"><h1>Rookie web</h1></mat-card-subtitle>
         <mat-divider></mat-divider>
         <mat-list >
-          <mat-list-item *ngFor="let note of notes; last as last">
+          <mat-list-item *ngFor="let host1 of host1s; last as last">
             <mat-icon mat-icon-button>done</mat-icon>
-            <h4 class="mat-list" mat-line>{{note.name}}</h4>
+            <h4 class="mat-list" mat-line>{{host1.name}}</h4>
             <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
           </mat-list-item>
         </mat-list>
@@ -29,8 +29,8 @@
         <p><strong>Godišnja cijena: 70Kn</strong></p>
         <p></p>
         <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
-          Naruči
-        </button>
+        Naruči
+      </button>
       </mat-card>
         <mat-divider [inset]="true"></mat-divider>
         <mat-card class="mat-elevation-z9 game2">
@@ -38,9 +38,9 @@
           <mat-card-subtitle align="center"><h1>Warlord web</h1></mat-card-subtitle>
           <mat-divider></mat-divider>
           <mat-list >
-            <mat-list-item *ngFor="let folder of folders; last as last">
+            <mat-list-item *ngFor="let host2 of host2s; last as last">
               <mat-icon mat-icon-button>done</mat-icon>
-              <h4 class="mat-list" mat-line>{{folder.name}}</h4>
+              <h4 class="mat-list" mat-line>{{host2.name}}</h4>
               <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
             </mat-list-item>
           </mat-list>

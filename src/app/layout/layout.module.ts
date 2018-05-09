@@ -20,6 +20,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatMenuModule,
     MatIconModule,
     FlexLayoutModule,
+
   ],
   exports: [
     MainLayoutComponent
