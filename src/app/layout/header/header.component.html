@@ -4,11 +4,26 @@
     <button mat-icon-button routerLink="/home"><mat-icon>home</mat-icon></button>
     <button mat-button [matMenuTriggerFor]="menu">Usluge</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/usluge/proweb">Profesionalni web</button>
-      <button mat-menu-item>Gaming web</button>
-      <button mat-menu-item>Shoutcast Radio</button>
-      <button mat-menu-item>SSL Certifikati</button>
-      <button mat-menu-item>Web hosting</button>
+      <button mat-menu-item class="slika" routerLink="/usluge/proweb" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img src="../../../assets/images/cpu.jpg" >
+        <div>Profesionalni web</div>
+      </button>
+      <button mat-menu-item class="slika" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img src="../../../assets/images/cpu.jpg" >
+        <div>Gaming web</div>
+      </button>
+      <button mat-menu-item class="slika" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img src="../../../assets/images/cpu.jpg"  >
+        <div>Shoutcast Radio</div>
+      </button>
+      <button mat-menu-item class="slika" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img src="../../../assets/images/cpu.jpg" >
+        <div>SSL Certifikati</div>
+      </button>
+      <button mat-menu-item class="slika" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img src="../../../assets/images/cpu.jpg" >
+        <div>Web hosting</div>
+      </button>
     </mat-menu>
     <button mat-button routerLink="/contact">Kontakt</button>
     <button mat-button>O nama</button>

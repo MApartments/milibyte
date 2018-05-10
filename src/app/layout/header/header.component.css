@@ -11,4 +11,12 @@
   max-height: 100px;
   max-width: 100px;
 }
+.kartica {
+  font-style: oblique;
+
+}
+.slika img {
+  max-width: 105px;
+  max-height: 45px;
+}
 

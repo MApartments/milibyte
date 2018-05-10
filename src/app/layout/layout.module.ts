@@ -4,7 +4,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatDividerModule, MatIconModule, MatMenuModule, MatTabsModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatIconModule,
+  MatMenuModule,
+  MatTabsModule,
+  MatToolbarModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
@@ -20,6 +28,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatMenuModule,
     MatIconModule,
     FlexLayoutModule,
+    MatCardModule,
 
   ],
   exports: [
