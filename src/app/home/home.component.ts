@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {HostingService} from './hosting.service';
 
 
 @Component({
@@ -11,45 +12,29 @@ import {Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-  folders = [
-    {name: '128 slušatelja'},
-    {name: 'Neograničen mjesečni promet'},
-    {name: 'Bitrate 128Kbps'},
-    {name: 'AutoDJ'},
-    {name: 'Prikaz informacija o trenutnom izvođaču'},
-    {name: 'Hrvatski data centar'},
-    {name: 'Administracijski web panel'},
-  ];
-  notes = [
-    {name: '32 slušatelja'},
-    {name: 'Neograničen mjesečni promet'},
-    {name: 'Bitrate 128Kbps'},
-    {name: 'AutoDJ'},
-    {name: 'Prikaz informacija o trenutnom izvođaču'},
-    {name: 'Hrvatski data centar'},
-    {name: 'Administracijski web panel'},
-  ];
-  host1s = [
-    {name: 'Free domena (.TK /.ML /.GA /.CF /.GQ)'},
-    {name: 'Neograničen mjesečni promet'},
-    {name: 'Joomla/Wordpress/..'},
-    {name: 'CoD,WoW,Battlefield,..'},
-    {name: 'Plugin po želji'},
-    {name: 'Hrvatski data centar'},
-    {name: 'Administracijski web panel'},
-  ];
-  host2s = [
-    {name: 'Domena (.COM /.NET /.ORG /.INFO)'},
-    {name: 'Neograničen mjesečni promet'},
-    {name: 'Joomla/Wordpress/HTML/..'},
-    {name: 'CoD,WoW,Battlefield,..'},
-    {name: 'Logo, Banner, plugin po želji'},
-    {name: 'Hrvatski data centar'},
-    {name: 'Administracijski web panel'},
-  ];
-  constructor() {}
+  folders = [];
+  notes = [];
+  host1s = [];
+  host2s = [];
+  constructor(private hostingService: HostingService) {}
 
   ngOnInit() {
+    this.hostingService.getShoutcasts().subscribe(
+      (serverData) => {
+      this.folders = serverData;
+    });
+    this.hostingService.getShoutcastsPremium().subscribe(
+      (serverData) => {
+        this.notes = serverData;
+      });
+    this.hostingService.getHostingRookie().subscribe(
+      (serverData) => {
+        this.host1s = serverData;
+      });
+    this.hostingService.getHostingWarlord().subscribe(
+      (serverData) => {
+        this.host2s = serverData;
+      });
   }
 
 }

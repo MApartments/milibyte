@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {ContactModule} from './contact/contact.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {UslugeModule} from './usluge/usluge.module';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {UslugeModule} from './usluge/usluge.module';
     LayoutModule,
     AppRoutingModule,
     FlexLayoutModule,
+    HttpClientModule,
   ],
   exports: [
     FlexLayoutModule,

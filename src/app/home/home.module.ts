@@ -15,6 +15,7 @@ import {
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {CovalentDataTableModule, CovalentVirtualScrollModule} from '@covalent/core';
+import {HostingService} from './hosting.service';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import {CovalentDataTableModule, CovalentVirtualScrollModule} from '@covalent/co
     MatDividerModule,
     MatListModule,
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent],
+  providers: [HostingService]
 })
 export class HomeModule { }
