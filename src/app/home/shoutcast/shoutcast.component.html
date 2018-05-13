@@ -1,0 +1,41 @@
+<mat-card class="mat-elevation-z9 shout1">
+  <span class="text-upper"><img src="../../assets/images/scr.png" align="center" class="scslika"/></span>
+  <mat-card-subtitle align="center"><h1>{{inputShoutcast.name}}</h1></mat-card-subtitle>
+  <mat-divider></mat-divider>
+  <mat-list>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputShoutcast.bandwidth === 'unlimited' ? 'Neogranicen' : inputShoutcast.bandwidth}} mjesecni promet</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputShoutcast.bitrate}}Kbps</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>{{inputShoutcast.adminWebPanel ? 'done' : 'clear'}}</mat-icon>
+      <h4 mat-line>Administracijski web panel</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>{{inputShoutcast.autoDj ? 'done' : 'clear'}}</mat-icon>
+      <h4 mat-line>Auto DJ</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputShoutcast.slots}} slusatelja</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>{{inputShoutcast.currentArtist ? 'done' : 'clear'}}</mat-icon>
+      <h4 mat-line>Prikaz trenutacnog izvodaca</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputShoutcast.dataCenter === 'hr' ? 'Hrvatski' : 'Nepoznat'}} data centar</h4>
+    </mat-list-item>
+  </mat-list>
+  <mat-divider></mat-divider>
+  <p><strong>Godišnja cijena: {{inputShoutcast.price}}Kn</strong></p>
+  <p></p>
+  <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
+    Naruči
+  </button>
+</mat-card>

@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HostingService} from './hosting.service';
+import {Shoutcast} from './shoutcast';
 
 
 @Component({
@@ -12,7 +13,7 @@ import {HostingService} from './hosting.service';
 export class HomeComponent implements OnInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-  folders = [];
+  shoutcasts: Shoutcast[] = [];
   notes = [];
   host1s = [];
   host2s = [];
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.hostingService.getShoutcasts().subscribe(
       (serverData) => {
-      this.folders = serverData;
+      this.shoutcasts = serverData;
     });
     this.hostingService.getShoutcastsPremium().subscribe(
       (serverData) => {

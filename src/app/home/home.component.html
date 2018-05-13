@@ -1,111 +1,134 @@
-<mat-grid-list cols="2" rowHeight="1:1">
-  <mat-grid-tile colspan="2" class="mat-elevation-z8 col1">
-    <div fxLayout="row" fxLayoutAlign="space-between end">
-      <mat-card class="vrh-card">
-        <strong><h1 class="naslov">Profesionalne webstranice</h1></strong>
-        <h2 class="naslov">Angular+Material, CSS, HTML...</h2>
-        <img src="../../assets/images/lap.jpeg" align="center" class="laptop"/>
-        <p>
-          <button color="warn" mat-raised-button routerLink="/contact">Kontakt</button>
-        </p>
-      </mat-card>
-    </div>
-    <div>
-      <button class="waccap" mat-fab mat-raised-button></button>
-      <button class="youtube" mat-fab mat-raised-button></button>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile class="col2">
-    <div>
-      <div><strong><h1>Gaming Website</h1></strong></div>
-      <h2>Gamin website za vas clan/guild</h2>
-      <div fxLayout="row" fxLayoutAlign="space-evenly">
-        <mat-card class="mat-elevation-z9 game1">
-          <span class="text-upper"><img src="../../assets/images/rookie.png" align="center" class="scslika"/></span>
-          <mat-card-subtitle align="center"><h1>Rookie web</h1></mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <mat-list-item *ngFor="let host1 of host1s; last as last">
-              <mat-icon mat-icon-button>done</mat-icon>
-              <h4 class="mat-list" mat-line>{{host1.name}}</h4>
-              <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
-            </mat-list-item>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <p><strong>Godišnja cijena: 70Kn</strong></p>
-          <p></p>
-          <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
-            Naruči
-          </button>
-        </mat-card>
-        <mat-divider [inset]="true"></mat-divider>
-        <mat-card class="mat-elevation-z9 game2">
-          <span class="text-upper"><img src="../../assets/images/warlord.png" align="center" class="scslika"/></span>
-          <mat-card-subtitle align="center"><h1>Warlord web</h1></mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <mat-list-item *ngFor="let host2 of host2s; last as last">
-              <mat-icon mat-icon-button>done</mat-icon>
-              <h4 class="mat-list" mat-line>{{host2.name}}</h4>
-              <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
-            </mat-list-item>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <p><strong>Godišnja cijena: 170Kn</strong></p>
-          <p></p>
-          <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
-            Naruči
-          </button>
-        </mat-card>
-      </div>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <div>
-      <div><strong><h1>Shoutcast internet radio</h1></strong></div>
-      <h2>Internet radio za svakoga po povoljnim cijenama</h2>
-      <div fxLayout="row" fxLayoutAlign="space-evenly" fxLayout.xs="column">
-        <mat-card class="mat-elevation-z9 shout1">
-          <span class="text-upper"><img src="../../assets/images/scr.png" align="center" class="scslika"/></span>
-          <mat-card-subtitle align="center"><h1>Beginner Shoutcast</h1></mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <mat-list-item *ngFor="let note of notes; last as last">
-              <mat-icon mat-icon-button>done</mat-icon>
-              <h4 mat-line>{{note.name}}</h4>
-              <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
-            </mat-list-item>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <p><strong>Godišnja cijena: 550Kn</strong></p>
-          <p></p>
-          <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
-            Naruči
-          </button>
-        </mat-card>
-        <mat-divider [inset]="true"></mat-divider>
-        <mat-card class="mat-elevation-z9 shout2">
-          <span class="text-upper"><img src="../../assets/images/scrp.png" align="center" class="scslika"/></span>
-          <mat-card-subtitle align="center"><h1>Premium Shoutcast</h1></mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <mat-list-item *ngFor="let folder of folders; last as last">
-              <mat-icon mat-icon-button>done</mat-icon>
-              <h4 mat-line>{{folder.name}}</h4>
-              <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
-            </mat-list-item>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <p><strong>Godišnja cijena: 1450Kn</strong></p>
-          <p></p>
-          <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
-            Naruči
-          </button>
-        </mat-card>
-      </div>
-    </div>
-  </mat-grid-tile>
-</mat-grid-list>
+<div fxLayout="row" fxLayoutAlign="space-between end">
+  <mat-card class="vrh-card">
+    <strong><h1 class="naslov">Profesionalne webstranice</h1></strong>
+    <h2 class="naslov">Angular+Material, CSS, HTML...</h2>
+    <img src="../../assets/images/lap.jpeg" align="center" class="laptop"/>
+    <p>
+      <button color="warn" mat-raised-button routerLink="/contact">Kontakt</button>
+    </p>
+  </mat-card>
+</div>
+<div>
+  <button class="waccap" mat-fab mat-raised-button></button>
+  <button class="youtube" mat-fab mat-raised-button></button>
+</div>
+
+<div>
+  <h1>Shoutcast internet radio</h1>
+  <h2>Internet radio za svakoga po povoljnim cijenama</h2>
+  <div fxLayout="row" fxLayoutAlign="space-evenly" fxLayout.xs="column">
+    <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"> </app-shoutcast>
+  </div>
+</div>
+
+<!--<mat-grid-list cols="2" rowHeight="1:1">-->
+  <!--<mat-grid-tile colspan="2" class="mat-elevation-z8 col1">-->
+     <!--<div fxLayout="row" fxLayoutAlign="space-between end">-->
+          <!--<mat-card class="vrh-card">-->
+          <!--<strong><h1 class="naslov">Profesionalne webstranice</h1></strong>-->
+        <!--<h2 class="naslov">Angular+Material, CSS, HTML...</h2>-->
+        <!--<img src="../../assets/images/lap.jpeg" align="center" class="laptop"/>-->
+        <!--<p>-->
+          <!--<button color="warn" mat-raised-button routerLink="/contact">Kontakt</button>-->
+        <!--</p>-->
+      <!--</mat-card>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<button class="waccap" mat-fab mat-raised-button></button>-->
+      <!--<button class="youtube" mat-fab mat-raised-button></button>-->
+    <!--</div>-->
+  <!--</mat-grid-tile>-->
+  <!--<mat-grid-tile class="col2">-->
+    <!--<div>-->
+      <!--<div><strong><h1>Gaming Website</h1></strong></div>-->
+      <!--<h2>Gamin website za vas clan/guild</h2>-->
+      <!--<div fxLayout="row" fxLayoutAlign="space-evenly">-->
+        <!--<mat-card class="mat-elevation-z9 game1">-->
+          <!--<span class="text-upper"><img src="../../assets/images/rookie.png" align="center" class="scslika"/></span>-->
+          <!--<mat-card-subtitle align="center"><h1>Rookie web</h1></mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list>-->
+            <!--<mat-list-item *ngFor="let host1 of host1s; last as last">-->
+              <!--<mat-icon mat-icon-button>done</mat-icon>-->
+              <!--<h4 class="mat-list" mat-line>{{host1.name}}</h4>-->
+              <!--<mat-divider [inset]="true" *ngIf="!last"></mat-divider>-->
+            <!--</mat-list-item>-->
+          <!--</mat-list>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<p><strong>Godišnja cijena: 70Kn</strong></p>-->
+          <!--<p></p>-->
+          <!--<button class="tipka" color="primary" mat-raised-button routerLink="/contact">-->
+            <!--Naruči-->
+          <!--</button>-->
+        <!--</mat-card>-->
+        <!--<mat-divider [inset]="true"></mat-divider>-->
+        <!--<mat-card class="mat-elevation-z9 game2">-->
+          <!--<span class="text-upper"><img src="../../assets/images/warlord.png" align="center" class="scslika"/></span>-->
+          <!--<mat-card-subtitle align="center"><h1>Warlord web</h1></mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list>-->
+            <!--<mat-list-item *ngFor="let host2 of host2s; last as last">-->
+              <!--<mat-icon mat-icon-button>done</mat-icon>-->
+              <!--<h4 class="mat-list" mat-line>{{host2.name}}</h4>-->
+              <!--<mat-divider [inset]="true" *ngIf="!last"></mat-divider>-->
+            <!--</mat-list-item>-->
+          <!--</mat-list>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<p><strong>Godišnja cijena: 170Kn</strong></p>-->
+          <!--<p></p>-->
+          <!--<button class="tipka" color="primary" mat-raised-button routerLink="/contact">-->
+            <!--Naruči-->
+          <!--</button>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</mat-grid-tile>-->
+  <!--<mat-grid-tile>-->
+    <!--<div>-->
+      <!--<div><strong><h1>Shoutcast internet radio</h1></strong></div>-->
+      <!--<h2>Internet radio za svakoga po povoljnim cijenama</h2>-->
+      <!--<div fxLayout="row" fxLayoutAlign="space-evenly" fxLayout.xs="column">-->
+        <!--<mat-card class="mat-elevation-z9 shout1">-->
+          <!--<span class="text-upper"><img src="../../assets/images/scr.png" align="center" class="scslika"/></span>-->
+          <!--<mat-card-subtitle align="center"><h1>Beginner Shoutcast</h1></mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list>-->
+            <!--<mat-list-item *ngFor="let note of notes; last as last">-->
+              <!--<mat-icon mat-icon-button>done</mat-icon>-->
+              <!--<h4 mat-line>{{note.name}}</h4>-->
+              <!--<mat-divider [inset]="true" *ngIf="!last"></mat-divider>-->
+            <!--</mat-list-item>-->
+          <!--</mat-list>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<p><strong>Godišnja cijena: 550Kn</strong></p>-->
+          <!--<p></p>-->
+          <!--<button class="tipka" color="primary" mat-raised-button routerLink="/contact">-->
+            <!--Naruči-->
+          <!--</button>-->
+        <!--</mat-card>-->
+        <!--<mat-divider [inset]="true"></mat-divider>-->
+        <!--<mat-card class="mat-elevation-z9 shout2">-->
+          <!--<span class="text-upper"><img src="../../assets/images/scrp.png" align="center" class="scslika"/></span>-->
+          <!--<mat-card-subtitle align="center"><h1>Premium Shoutcast</h1></mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list>-->
+            <!--<mat-list-item *ngFor="let shoutcast of shoutcasts; last as last">-->
+              <!--<mat-icon mat-icon-button>done</mat-icon>-->
+              <!--<h4 mat-line>{{shoutcast.name}}</h4>-->
+              <!--<mat-divider [inset]="true" *ngIf="!last"></mat-divider>-->
+            <!--</mat-list-item>-->
+          <!--</mat-list>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<p><strong>Godišnja cijena: 1450Kn</strong></p>-->
+          <!--<p></p>-->
+          <!--<button class="tipka" color="primary" mat-raised-button routerLink="/contact">-->
+            <!--Naruči-->
+          <!--</button>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</mat-grid-tile>-->
+<!--</mat-grid-list>-->
 
 <div fxLayout="row" class="hosting">
   <div fxFlex></div>

@@ -16,10 +16,7 @@
   border: aliceblue solid 1px;
   border-radius: 15px;
 }
-.scslika {
-  max-width: 302px;
-  max-height: 82px;
-}
+
 .hosting {
   background-image: url("../../assets/images/serverhost.png");
   color: white;
@@ -40,11 +37,7 @@
   background-color: orange;
   max-width: 300px;
 }
-.shout1 {
-  border-radius: 15px;
-  background-color: lightskyblue;
-  max-width: 300px
-}
+
 .game1 {
   border-radius: 15px;
   background-color: orange;
