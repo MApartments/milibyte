@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HostingService} from './hosting.service';
 import {Shoutcast} from './shoutcast';
+import {Hosting} from './hosting';
 
 
 @Component({
@@ -14,28 +15,19 @@ export class HomeComponent implements OnInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   shoutcasts: Shoutcast[] = [];
-  notes = [];
-  host1s = [];
-  host2s = [];
+  hostings: Hosting[] = []
   constructor(private hostingService: HostingService) {}
 
   ngOnInit() {
     this.hostingService.getShoutcasts().subscribe(
       (serverData) => {
-      this.shoutcasts = serverData;
-    });
-    this.hostingService.getShoutcastsPremium().subscribe(
-      (serverData) => {
-        this.notes = serverData;
+        this.shoutcasts = serverData;
       });
-    this.hostingService.getHostingRookie().subscribe(
+    this.hostingService.getHostings().subscribe(
       (serverData) => {
-        this.host1s = serverData;
+        this.hostings = serverData;
       });
-    this.hostingService.getHostingWarlord().subscribe(
-      (serverData) => {
-        this.host2s = serverData;
-      });
+
   }
 
 }

@@ -1,8 +1,5 @@
-.col1 {
+.vrh {
   background-image: url("../../assets/images/cpu.jpg");
-  background-size: cover;
-  color: white;
-  font-size: large;
 }
 .laptop {
   max-width: 600px;
@@ -90,6 +87,7 @@ tr:nth-child(even) {
 }
 .vrh-card {
   background:rgba(255,255,255,0.2);
+  position: center;
 }
 .tablica-naslov {
   color: white;

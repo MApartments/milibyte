@@ -17,6 +17,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {CovalentDataTableModule, CovalentVirtualScrollModule} from '@covalent/core';
 import {HostingService} from './hosting.service';
 import { ShoutcastComponent } from './shoutcast/shoutcast.component';
+import { HostingComponent } from './hosting/hosting.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,7 @@ import { ShoutcastComponent } from './shoutcast/shoutcast.component';
     MatDividerModule,
     MatListModule,
   ],
-  declarations: [HomeComponent, ShoutcastComponent],
+  declarations: [HomeComponent, ShoutcastComponent, HostingComponent],
   providers: [HostingService]
 })
 export class HomeModule { }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Shoutcast} from './shoutcast';
+import {Hosting} from './hosting';
 
 @Injectable()
 export class HostingService {
@@ -11,17 +12,9 @@ export class HostingService {
     const shoutcastsUrl = this.backendUrl + 'shoutcast';
     return this.http.get<Shoutcast[]>(shoutcastsUrl);
   }
-  getShoutcastsPremium() {
-    const shoutcastsPremiumUrl = this.backendUrl + 'shoutcastPremium';
-    return this.http.get<any>(shoutcastsPremiumUrl);
-  }
-  getHostingRookie() {
-    const hostingRookieUrl = this.backendUrl + 'hostingRookie';
-    return this.http.get<any>(hostingRookieUrl);
-  }
-  getHostingWarlord() {
-    const   hostingWarlordUrl = this.backendUrl + 'hostingWarlord';
-    return this.http.get<any>(hostingWarlordUrl);
+  getHostings() {
+    const HostingsUrl = this.backendUrl + 'hosting';
+    return this.http.get<Hosting[]>(HostingsUrl);
   }
 }
 

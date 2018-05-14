@@ -1,0 +1,41 @@
+<mat-card class="mat-elevation-z9 shout1">
+  <span class="text-upper"><img src="../../../assets/images/rookie.png" align="center" class="scslika"/></span>
+  <mat-card-subtitle align="center"><h1>{{inputHosting.name}}</h1></mat-card-subtitle>
+  <mat-divider></mat-divider>
+  <mat-list>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputHosting.bandwidth === 'unlimited' ? 'Neogranicen' : inputHosting.bandwidth}} mjesecni promet</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputHosting.domena}}</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>{{inputHosting.adminWebPanel ? 'done' : 'clear'}}</mat-icon>
+      <h4 mat-line>Administracijski web panel</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>{{inputHosting.plugin ? 'done' : 'clear'}}</mat-icon>
+      <h4 mat-line>PlugIn</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputHosting.game}}</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputHosting.cms}}</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-icon-button>done</mat-icon>
+      <h4 mat-line>{{inputHosting.storage === 'unlimited' ? 'Neograniceno' : inputHosting.bandwidth}} podataka</h4>
+    </mat-list-item>
+  </mat-list>
+  <mat-divider></mat-divider>
+  <p><strong>Godišnja cijena: {{inputHosting.price}}Kn</strong></p>
+  <p></p>
+  <button class="tipka" color="primary" mat-raised-button routerLink="/contact">
+    Naruči
+  </button>
+</mat-card>

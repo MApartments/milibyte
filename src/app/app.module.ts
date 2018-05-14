@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material';
 import {HomeModule} from './home/home.module';
+import {StoreModule} from './store/store.module';
 import {LayoutModule} from './layout/layout.module';
 import {AppRoutingModule} from './app-routing.module';
 import {ContactModule} from './contact/contact.module';
@@ -13,14 +14,16 @@ import {UslugeModule} from './usluge/usluge.module';
 import {HttpClientModule} from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     MatButtonModule,
     HomeModule,
+    StoreModule,
     ContactModule,
     UslugeModule,
     LayoutModule,
