@@ -1,3 +1,18 @@
-<p>
-  store works!
-</p>
+<div class="glavna" fxLayout="row" fxLayoutAlign="center">
+  <div fxFlex class="livaStrana">
+    <div fxLayoutAlign="center" class="transp">
+        <div fxLayout="column" fxLayoutAlign="start center" class="polje mat-elevation-z8">
+          <img src="../../assets/images/logo.png" class="logo">
+          <p><strong>Contact information</strong></p>
+          <mat-form-field >
+            <input matInput placeholder="vaša email adresa" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <p><mat-checkbox>Keep me up to date on news</mat-checkbox></p>
+        </div>
+    </div>
+  </div>
+  <div fxFlex class="desnaStrana">
+
+  </div>
+</div>
