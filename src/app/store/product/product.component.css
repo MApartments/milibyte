@@ -1,0 +1,8 @@
+h2 {
+  text-transform: capitalize;
+}
+.container {
+  border-radius: 5px;
+  border: gray solid 1px;
+  background-color: ghostwhite;
+}

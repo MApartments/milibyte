@@ -3,9 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { StoreRoutingModule } from './store-routing.module';
 import { StoreComponent } from './store.component';
-import {MatCardModule, MatCheckboxModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatSelectModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {ProductService} from './product.service';
+import { ProductComponent } from './product/product.component';
+
 
 @NgModule({
   imports: [
@@ -18,7 +21,11 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatCardModule,
     FlexLayoutModule,
     MatCheckboxModule,
+    MatSelectModule,
+    MatButtonModule,
+
   ],
-  declarations: [StoreComponent]
+  declarations: [StoreComponent, ProductComponent],
+  providers: [ProductService]
 })
 export class StoreModule { }

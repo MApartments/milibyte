@@ -1,17 +1,9 @@
-.livaStrana {
-  background-image: url("../../assets/images/cpu.jpg");
-  background-size: cover;
-}
-.desnaStrana {
+.bg {
   background-color: white;
 }
-.polje {
-  background:rgba(255,255,255,0.5);
-}
-.transp {
-  background:rgba(255,255,255,0.2);
-  position: center;
-}
-.logo {
-  position: center;
+.slika {
+  max-width: 250px;
+  max-height: 250px;
+  border: aliceblue solid 1px;
+  border-radius: 10px;
 }

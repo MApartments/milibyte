@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {Component, Input, OnInit} from '@angular/core';
+import {Product} from './product';
+import {ProductService} from './product.service';
+
 
 @Component({
   selector: 'app-store',
@@ -8,17 +10,17 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class StoreComponent implements OnInit {
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+  @Input() inputProduct: Product;
 
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'Morate unijeti eamil adresu' :
-      this.email.hasError('email') ? 'Netočna email adresa' :
-        '';
+  products: Product[] = [];
+
+  constructor(private productsService: ProductService) {
   }
-
-  constructor() { }
-
   ngOnInit() {
-  }
+    this.productsService.getProducts().subscribe(
+      (serverData) => {
+        this.products = serverData;
+      });
 
+  }
 }
