@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {ProductService} from './product.service';
 import { ProductComponent } from './product/product.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { ProductComponent } from './product/product.component';
     MatButtonModule,
 
   ],
-  declarations: [StoreComponent, ProductComponent],
+  declarations: [StoreComponent, ProductComponent, CheckoutComponent],
   providers: [ProductService]
 })
 export class StoreModule { }
