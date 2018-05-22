@@ -1,38 +1,38 @@
-<div class="checkout" fxLayout="row" fxLayoutAlign="space-evenly center">
-  <div>
+<div class="checkout" fxLayout="row" fxLayoutAlign="space-evenly" fxLayoutGap="20px">
+  <div fxFlex>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <input matInput placeholder="Ime">
-    </mat-form-field>
+    </mat-form-field></p>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <input matInput placeholder="Enter your email" [formControl]="email" required>
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
+    </mat-form-field></p>
 
-    <mat-checkbox>Keep me up to date with news.</mat-checkbox>
+    <p><mat-checkbox>Keep me up to date with news.</mat-checkbox></p>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <textarea matInput placeholder="Adresa"></textarea>
-    </mat-form-field>
+    </mat-form-field></p>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <mat-select placeholder="Payment method">
         <mat-option value="option">Credit card</mat-option>
         <mat-option value="option">PayPal</mat-option>
       </mat-select>
-    </mat-form-field>
+    </mat-form-field></p>
 
   </div>
-  <div>
+  <div fxFlex>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <input matInput placeholder="Prezime">
-    </mat-form-field>
+    </mat-form-field></p>
 
-    <mat-form-field>
+    <p><mat-form-field>
       <input matInput placeholder="Order notes">
-    </mat-form-field>
+    </mat-form-field></p>
 
   </div>
 </div>

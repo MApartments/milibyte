@@ -13,6 +13,7 @@ export class StoreComponent implements OnInit {
   @Input() inputProduct: Product;
 
   products: Product[] = [];
+  step = 0;
 
   constructor(private productsService: ProductService) {
   }
@@ -22,5 +23,9 @@ export class StoreComponent implements OnInit {
         this.products = serverData;
       });
 
+  }
+
+  setStep(step: number) {
+    this.step = step;
   }
 }

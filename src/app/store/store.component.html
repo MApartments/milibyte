@@ -2,7 +2,30 @@
   <div fxLayoutAlign="center">
      <img src="../../assets/images/logo.png">
   </div>
-  <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px" class="pad-lg">
-    <app-product *ngFor="let product of products" [inputProduct]="product" class="push-bottom"> </app-product>
-  </div>
-</div>
+
+  <mat-horizontal-stepper [selectedIndex]="step">
+    <mat-step>
+      <ng-template matStepLabel>Choose product</ng-template>
+      <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px" class="pad-lg">
+        <app-product *ngFor="let product of products" [inputProduct]="product" class="push-bottom" (order)="setStep(1)"> </app-product>
+      </div>
+      <div>
+        <button mat-raised-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Fill out your personal information</ng-template>
+      <app-checkout></app-checkout>
+      <div>
+        <button mat-raised-button matStepperPrevious>Back</button>
+        <button mat-raised-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <app-card></app-card>
+      <div>
+        <button mat-raised-button matStepperPrevious>Back</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
