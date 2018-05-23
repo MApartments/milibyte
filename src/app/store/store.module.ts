@@ -19,6 +19,7 @@ import { ProductComponent } from './product/product.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CardComponent } from './card/card.component';
 import {CreditCardDirectivesModule} from 'angular-cc-library';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import {CreditCardDirectivesModule} from 'angular-cc-library';
     CreditCardDirectivesModule,
 
   ],
-  declarations: [StoreComponent, ProductComponent, CheckoutComponent, CardComponent],
+  declarations: [StoreComponent, ProductComponent, CheckoutComponent, CardComponent, PaypalComponent],
   providers: [ProductService]
 })
 export class StoreModule { }

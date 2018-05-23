@@ -24,6 +24,7 @@
     <mat-step>
       <ng-template matStepLabel>Done</ng-template>
       <app-card *ngIf="paymentMethod == 'creditCard'"></app-card>
+      <app-paypal *ngIf="paymentMethod == 'payPal'"></app-paypal>
       <div>
         <button mat-raised-button matStepperPrevious>Back</button>
       </div>
