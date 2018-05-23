@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 
 @Component({
@@ -7,7 +7,10 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  @Output() paymentMethodSelected = new EventEmitter<string>();
   email = new FormControl('', [Validators.required, Validators.email]);
+
+
 
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
@@ -16,6 +19,10 @@ export class CheckoutComponent implements OnInit {
   }
 
   constructor() { }
+
+  paymentMethodChanged(selectedPaymentMethod) {
+    this.paymentMethodSelected.emit(selectedPaymentMethod.value);
+  }
 
   ngOnInit() {
   }

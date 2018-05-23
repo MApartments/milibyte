@@ -14,6 +14,7 @@ export class StoreComponent implements OnInit {
 
   products: Product[] = [];
   step = 0;
+  paymentMethod: string;
 
   constructor(private productsService: ProductService) {
   }
@@ -27,5 +28,8 @@ export class StoreComponent implements OnInit {
 
   setStep(step: number) {
     this.step = step;
+  }
+  onPaymentMethodSelected(paymentMethod) {
+    this.paymentMethod = paymentMethod;
   }
 }

@@ -1,5 +1,5 @@
 
-
+<div class="creditCard">
 <form [formGroup]="form" (ngSubmit)="onSubmit(form)" novalidate>
   <p>A general purpose library for building credit card forms, validating inputs and formatting numbers.</p>
   <div class="form-group">
@@ -23,3 +23,4 @@
     <div *ngIf="!form.controls.cvc.valid" class="alert alert-danger">CVC is required</div>
   </div>
 </form>
+</div>

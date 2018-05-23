@@ -17,9 +17,9 @@
     </mat-form-field></p>
 
     <p><mat-form-field>
-      <mat-select placeholder="Payment method">
-        <mat-option value="option">Credit card</mat-option>
-        <mat-option value="option">PayPal</mat-option>
+      <mat-select (selectionChange)="paymentMethodChanged($event)" placeholder="Payment method">
+        <mat-option value="creditCard">Credit card</mat-option>
+        <mat-option value="payPal">PayPal</mat-option>
       </mat-select>
     </mat-form-field></p>
 
