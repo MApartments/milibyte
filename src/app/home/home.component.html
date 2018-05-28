@@ -1,27 +1,21 @@
-<div class="vrh mat-elevation-z8" fxLayout="row" fxLayoutAlign="center">
+<div class="vrh" fxLayout="row" fxLayoutAlign="center">
 
-</div>
-<div>
-  <button class="waccap" mat-fab mat-raised-button></button>
-  <button class="youtube" mat-fab mat-raised-button></button>
-</div>
-
-<div fxLayout="row" fxLayoutAlign="space-between end">
-  <div>
-    <h1>Gaming website</h1>
-    <h2>Gaming website za vas clan ili guild</h2>
-    <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayout.xs="column">
-      <app-hosting *ngFor="let hosting of hostings" [inputHosting]="hosting"> </app-hosting>
-    </div>
-  </div>
 
   <div>
-    <h1>Shoutcast internet radio</h1>
-    <h2>Internet radio za svakoga po povoljnim cijenama</h2>
-    <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayout.xs="column">
-      <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"> </app-shoutcast>
+    <button class="waccap" mat-fab mat-raised-button></button>
+    <button class="youtube" mat-fab mat-raised-button></button>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-evenly end" fxFlex>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <app-hosting *ngFor="let hosting of hostings" [inputHosting]="hosting"></app-hosting>
+
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"></app-shoutcast>
+
+      </div>
     </div>
   </div>
-</div>
-
-

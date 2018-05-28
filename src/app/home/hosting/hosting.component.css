@@ -1,9 +1,10 @@
-shout1 {
-  border-radius: 15px;
-  background-color: lightskyblue;
+.host1 {
   max-width: 300px
 }
 .scslika {
-  max-width: 302px;
-  max-height: 82px;
+  max-width: 282px;
+  max-height: 62px;
+}
+h3 {
+  color: orangered;
 }

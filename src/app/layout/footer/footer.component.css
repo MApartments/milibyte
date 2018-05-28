@@ -3,11 +3,3 @@
   background-color: slategrey;
   color: white;
 }
-.separator-line {
-  height: 2px;
-  background-color: blue;
-}
-.buttons-tab  button:hover {
-  color: blue;
-}
-
