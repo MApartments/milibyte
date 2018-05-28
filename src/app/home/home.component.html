@@ -1,12 +1,5 @@
 <div class="vrh mat-elevation-z8" fxLayout="row" fxLayoutAlign="center">
-  <mat-card class="vrh-card">
-    <strong><h1 class="naslov">Profesionalne webstranice</h1></strong>
-    <h2 class="naslov">Angular+Material, CSS, HTML...</h2>
-    <img src="../../assets/images/lap.jpeg" align="center" class="laptop"/>
-    <p>
-      <button color="warn" mat-raised-button routerLink="/contact">Kontakt</button>
-    </p>
-  </mat-card>
+
 </div>
 <div>
   <button class="waccap" mat-fab mat-raised-button></button>
@@ -31,52 +24,4 @@
   </div>
 </div>
 
-
-<div fxLayout="row" class="hosting">
-  <div fxFlex></div>
-  <div fxFlex class="example-container mat-elevation-z8">
-    <span class="tablica-naslov mat-title"><strong>Web hosting paketi</strong></span>
-    <mat-table #table [dataSource]="dataSource">
-
-
-      <!--- Note that these columns can be defined in any order.
-            The actual rendered columns are set as a property on the row definition" -->
-
-      <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <mat-header-cell *matHeaderCellDef> Osnovni podaci</mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.position}}</mat-cell>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <mat-header-cell *matHeaderCellDef><strong>Beginner hosting</strong></mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.name}}</mat-cell>
-      </ng-container>
-
-      <!-- Weight Column -->
-      <ng-container matColumnDef="weight">
-        <mat-header-cell *matHeaderCellDef><strong>Pro hosting</strong></mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.weight}}</mat-cell>
-      </ng-container>
-
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="symbol">
-        <mat-header-cell *matHeaderCellDef><strong>Premium hosting</strong></mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.symbol}}</mat-cell>
-      </ng-container>
-
-      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
-    <div fxLayout="row" fxLayoutAlign="center">
-      <button color="primary" mat-raised-button routerLink="/contact">
-        Naruci
-      </button>
-      <button color="warn" mat-raised-button routerLink="/contact">
-        Više
-      </button>
-    </div>
-  </div>
-</div>
 
