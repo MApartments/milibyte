@@ -15,6 +15,7 @@ import {
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {StickyNavModule} from 'ng2-sticky-nav/dist';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatIconModule,
     FlexLayoutModule,
     MatCardModule,
+    StickyNavModule,
 
   ],
   exports: [

@@ -1,5 +1,6 @@
 .vrh {
-  background-color: #f8f9fa;
+  background-image: url("../../../src/assets/images/dasneues.png");
+  background-size: cover;
 }
 .slika {
   max-width: 302px;
@@ -42,7 +43,7 @@
   color: white;
 }
 .tablica {
-  font-family: arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-collapse: collapse;
   width: 100%;
 }

@@ -1,21 +1,26 @@
-<div class="vrh" fxLayout="row" fxLayoutAlign="center">
-
+<div>
+  <div class="vrh" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+    <h1>SAMO NAJBOLJE</h1>
+    <p>
+      <button mat-fab>VIŠE</button>
+    </p>
+  </div>
 
   <div>
     <button class="waccap" mat-fab mat-raised-button></button>
     <button class="youtube" mat-fab mat-raised-button></button>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-evenly end" fxFlex>
-      <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutAlign="space-between">
 
-          <app-hosting *ngFor="let hosting of hostings" [inputHosting]="hosting"></app-hosting>
+      <app-hosting *ngFor="let hosting of hostings" [inputHosting]="hosting"></app-hosting>
 
-      </div>
+    </div>
 
-      <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutAlign="space-between">
 
-          <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"></app-shoutcast>
+      <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"></app-shoutcast>
 
-      </div>
     </div>
   </div>
+</div>

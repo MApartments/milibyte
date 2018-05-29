@@ -1,8 +1,8 @@
 <mat-card class="mat-elevation-z9 host1">
-  <span class="text-upper"><img src="../../../assets/images/rookie.png" align="center" class="scslika"/></span>
+  <span class="text-upper"></span>
   <mat-card-subtitle align="center"><h1>{{inputHosting.name}}</h1></mat-card-subtitle>
   <mat-divider></mat-divider>
-  <mat-list>
+  <mat-list class="tab">
     <mat-list-item>
       <mat-icon mat-icon-button>done</mat-icon>
       <h4 mat-line>{{inputHosting.bandwidth === 'unlimited' ? 'Neogranicen' : inputHosting.bandwidth}} mjesecni promet</h4>
@@ -34,7 +34,7 @@
   </mat-list>
   <mat-divider></mat-divider>
   <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex>
-    <button class="tipka" color="primary" mat-raised-button routerLink="/contact">Naruči</button>
+    <button class="tipka" color="accent" mat-raised-button routerLink="/contact">Naruči</button>
     <h3>+{{inputHosting.price}} Kn</h3>
   </div>
 </mat-card>

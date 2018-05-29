@@ -1,5 +1,6 @@
 .host1 {
-  max-width: 300px
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
 }
 .scslika {
   max-width: 282px;
@@ -7,4 +8,7 @@
 }
 h3 {
   color: orangered;
+}
+.tab {
+  font-family: 'Poppins', sans-serif;
 }

@@ -18,6 +18,7 @@ import {CovalentDataTableModule, CovalentVirtualScrollModule} from '@covalent/co
 import {HostingService} from './hosting.service';
 import { ShoutcastComponent } from './shoutcast/shoutcast.component';
 import { HostingComponent } from './hosting/hosting.component';
+import {StickyNavModule} from 'ng2-sticky-nav/dist';
 
 @NgModule({
   imports: [
@@ -36,6 +37,8 @@ import { HostingComponent } from './hosting/hosting.component';
     MatTableModule,
     MatDividerModule,
     MatListModule,
+    StickyNavModule,
+
   ],
   declarations: [HomeComponent, ShoutcastComponent, HostingComponent],
   providers: [HostingService]
