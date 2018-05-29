@@ -1,7 +1,7 @@
 <mat-toolbar class="header mat-elevation-z13" fxLayout="row" fxLayoutAlign="space-between" ngStickyNav>
   <div fxLayout="row" fxLayoutAlign="start center">
     <div><img class="logo" src="../../../assets/images/logo.png"></div>
-    <button mat-icon-button routerLink="/home"><mat-icon>home</mat-icon></button>
+    <button class="home" mat-icon-button routerLink="/home"><mat-icon>home</mat-icon></button>
     <button class="tipka" mat-button [matMenuTriggerFor]="menu">USLUGE</button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item class="slika" routerLink="/usluge/proweb" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">

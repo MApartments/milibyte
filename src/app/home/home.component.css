@@ -88,3 +88,6 @@ tr:nth-child(even) {
   color: white;
   text-shadow: 2px 2px black;
 }
+.vrhtxt {
+  text-shadow: 2px 2px 4px gray;
+}
