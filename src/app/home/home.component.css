@@ -96,6 +96,7 @@ tr:nth-child(even) {
 }
 .hosting2 {
   background-color: #CCE0EB;
+  text-shadow: 2px 2px 4px gray;
 }
 .crossPlatform {
   max-width: 250px;
@@ -111,4 +112,8 @@ h1 {
 .tipka-boja {
   background-color: orange;
   color: white;
+}
+.pro-web {
+  background-color: white;
+  text-shadow: 2px 2px 4px gray;
 }
