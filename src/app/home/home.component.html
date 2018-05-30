@@ -1,16 +1,31 @@
 <div>
-  <div class="vrh" fxLayout="column" fxLayoutAlign="center center" fxFlex>
-
-      <p class="vrhtxt"><strong>MILIBYTE</strong> - NAJBOLJI DIZAJN ZA VASE WEBSTRANICE </p>
-
-    <p>
-      <button mat-fab>VIŠE</button>
-    </p>
-  </div>
-
-  <div>
+  <div class="vrh" ngClass.gt-sm="scale-div">
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="100px" fxFlex>
+      <div>
+        <p class="vrhtxt"><strong>MILIBYTE</strong> - NAJBOLJI DIZAJN ZA VASE WEBSTRANICE </p>
+      </div>
+      <div>
+        <img src="../../assets/images/crossPlatform.png" class="crossPlatform" ngClass.gt-sm="scale-image">
+      </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="end center" fxFlex>
+      <button class="tipka-boja" mat-fab color="basic">VIŠE</button>
+    </div>
+    <div>
+    </div>
     <button class="waccap" mat-fab mat-raised-button></button>
     <button class="youtube" mat-fab mat-raised-button></button>
+  </div>
+
+  <div class="hosting2" fxLayout="column" fxFlex fxLayoutAlign="center center">
+    <h1> WEBSITE HOSTING</h1>
+    <div>
+      <button color="primary" mat-button mat-raised-button>VIŠE</button>
+    </div>
+  </div>
+
+  <div fxLayoutAlign="center center" fxFlex>
+    <h1> GAMING I SHOUTCAST HOSTING SOLUTION</h1>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-evenly end" fxFlex>
     <div fxLayout="row" fxLayoutAlign="space-between">
@@ -25,4 +40,5 @@
 
     </div>
   </div>
+
 </div>

@@ -2,6 +2,9 @@
   background-image: url("../../../src/assets/images/dasneues.png");
   background-size: cover;
 }
+.scale-div {
+  min-height: 300px;
+}
 .slika {
   max-width: 302px;
   max-height: 82px;
@@ -90,4 +93,22 @@ tr:nth-child(even) {
 }
 .vrhtxt {
   text-shadow: 2px 2px 4px gray;
+}
+.hosting2 {
+  background-color: #CCE0EB;
+}
+.crossPlatform {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.scale-image {
+  transform: scale(1.5,1.5);
+}
+h1 {
+  text-shadow: 1px 1px gainsboro;
+}
+.tipka-boja {
+  background-color: orange;
+  color: white;
 }
