@@ -19,9 +19,9 @@ export class ContactComponent implements OnInit {
   email: string;
   product: {name: string, price: string};
   products = [
-    {name: 'Professional website', price: 'Cijena ovisi o zeljama'},
-    {name: 'Gaming website', price: 'Cijena: Bez domene 100Kn, s com domenom 200kn'},
-    {name: 'Shoutcast radio', price: 'Cijena: vec od 500kn'},
+    {name: 'Professional website', price: 'Hvala'},
+    {name: 'Gaming website', price: 'Hvala'},
+    {name: 'Shoutcast radio', price: 'Hvala'},
   ];
   emailFormControl = new FormControl('', [
     Validators.required,

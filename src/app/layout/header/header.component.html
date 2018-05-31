@@ -4,7 +4,7 @@
     <button class="home" mat-icon-button routerLink="/home"><mat-icon>home</mat-icon></button>
     <button class="tipka" mat-button [matMenuTriggerFor]="menu">USLUGE</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item class="slika" routerLink="/usluge/proweb" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+      <button mat-menu-item class="slika uslugeTipka" routerLink="/usluge/proweb" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
         <img src="../../../assets/images/cpu.jpg" >
         <div>Profesionalni web</div>
       </button>
@@ -30,8 +30,8 @@
     <button class="tipka" mat-button>O NAMA</button>
   </div>
     <div fxLayout="row" fxLayoutAlign="end center">
-        <button class="tipka" mat-button class="zastava"><img src="../../../assets/images/hr.png" class="zastava"></button>
-        <button class="tipka" mat-button class="zastava"><img src="../../../assets/images/gb.png" class="zastava"></button>
-        <button class="tipka" mat-button class="zastava"><img src="../../../assets/images/un.png" class="zastava"></button>
+        <button mat-button class="zastava tipka"><img src="../../../assets/images/hr.png" class="zastava"></button>
+        <button mat-button class="zastava tipka"><img src="../../../assets/images/gb.png" class="zastava"></button>
+        <button mat-button class="zastava tipka"><img src="../../../assets/images/un.png" class="zastava"></button>
     </div>
 </mat-toolbar>

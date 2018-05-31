@@ -1,8 +1,8 @@
 <div>
   <div class="vrh" ngClass.gt-sm="scale-div">
-    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="100px" fxFlex>
-      <div>
-        <p class="vrhtxt"><strong>MILIBYTE</strong> - NAJBOLJI DIZAJN ZA VASE WEBSTRANICE </p>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.lt-sm="start center" fxLayoutGap="100px" fxFlex>
+      <div fxHide.xs>
+        <p class="vrhtxt" ><strong>MILIBYTE</strong> - NAJBOLJI DIZAJN ZA VAŠE WEBSTRANICE </p>
       </div>
       <div>
         <img src="../../assets/images/crossPlatform.png" class="crossPlatform" ngClass.gt-sm="scale-image">
@@ -13,39 +13,44 @@
     </div>
     <div>
     </div>
-    <button class="waccap" mat-fab mat-raised-button></button>
-    <button class="youtube" mat-fab mat-raised-button></button>
+    <button ngClass.gt-md="waccap" ngClass.lt-md="xswaccap" mat-fab mat-raised-button></button>
+    <button ngClass.gt-md="youtube" ngClass.lt-md="xsyoutube" mat-fab mat-raised-button></button>
   </div>
 
   <div class="pro-web">
     <div fxLayout="column" fxFlex fxLayoutAlign="center center">
       <h2>IZRAĐUJEMO PROFESIONALNE WEB-STRANICE ZA VAŠU TVRTKU</h2>
-      <h3>Vaše želje naše programiranje.</h3>
+      <h3>Responzivne za najbolju kvalitetu na svim uređajima.</h3>
+      <img src="../../assets/images/responsiv.gif" ngClass.gt-md="crossPlatformResponsiv" ngClass.lt-md="xs">
     </div>
   </div>
 
-  <div class="hosting2" fxLayout="column" fxFlex fxLayoutAlign="center center">
-    <h1> WEBSITE HOSTING</h1>
-    <div fxLayout="row" fxLayoutGap="100px">
-      <img src="../../assets/images/blueserver.PNG" class="crossPlatform" ngClass.gt-sm="scale-image">
-      <h2>Početni Hosting za samo 10Kn/mjesečno!</h2>
+  <div class="hosting2" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
+    <div fxFlex fxLayout="row" fxLayoutAlign="end end" fxHide.xs>
+      <img src="../../assets/images/blueserver.PNG" class="blueServer" ngClass.gt-sm="scale-serverimage">
     </div>
-    <div>
-      <button color="primary" mat-button mat-raised-button>VIŠE</button>
+    <div fxFlex fxLayout="column" fxLayoutAlign="center start" class="pad-bottom-sm" fxLayoutAlign.xs="start start">
+      <h2> WEBSITE HOSTING</h2>
+      <div fxLayout="row" fxLayoutGap="100px">
+        <h2>Početni Hosting za samo 10Kn/mjesečno!</h2>
+      </div>
+      <div>
+        <button color="primary" mat-raised-button>VIŠE</button>
+      </div>
     </div>
   </div>
 
   <div fxLayoutAlign="center center" fxFlex>
-    <h1> GAMING I SHOUTCAST HOSTING SOLUTION</h1>
+    <h2> GAMING I SHOUTCAST HOSTING SOLUTION</h2>
   </div>
-  <div fxLayout="row" fxLayoutAlign="space-evenly end" fxFlex>
-    <div fxLayout="row" fxLayoutAlign="space-between">
+  <div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlex fxLayout.lt-md="column" fxLayout.lt-lg="column">
+    <div fxLayout="row" fxLayoutAlign="space-between" fxLayout.lt-md="column">
 
       <app-hosting *ngFor="let hosting of hostings" [inputHosting]="hosting"></app-hosting>
 
     </div>
 
-    <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutAlign="space-between" fxLayout.lt-md="column">
 
       <app-shoutcast *ngFor="let shoutcast of shoutcasts" [inputShoutcast]="shoutcast"></app-shoutcast>
 

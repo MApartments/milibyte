@@ -71,10 +71,26 @@ tr:nth-child(even) {
   background-size: cover;
   background-image: url("../../assets/images/wac.png");
 }
+.xswaccap {
+  position: absolute;
+  top: 120px;
+  right: 8px;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("../../assets/images/wac.png");
+}
 .youtube {
   position: absolute;
   top: 350px;
   right: 15px;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("../../assets/images/you.png");
+}
+.xsyoutube {
+  position: absolute;
+  top: 200px;
+  right: 8px;
   background-color: transparent;
   background-size: cover;
   background-image: url("../../assets/images/you.png");
@@ -97,12 +113,23 @@ tr:nth-child(even) {
 .hosting2 {
   background-color: #CCE0EB;
   text-shadow: 2px 2px 4px gray;
+  min-height: 335px;
 }
 .crossPlatform {
   max-width: 250px;
   max-height: 250px;
 }
-
+.crossPlatformResponsiv {
+  max-width: 750px;
+  max-height: 750px;
+}
+.blueServer {
+  max-width: 350px;
+  max-height: 350px;
+}
+.scale-serverimage {
+  transform: scale(1.5, 1.5) translateY(10%);
+}
 .scale-image {
   transform: scale(1.5,1.5);
 }
@@ -116,4 +143,8 @@ h1 {
 .pro-web {
   background-color: white;
   text-shadow: 2px 2px 4px gray;
+}
+.xs {
+  max-height: 250px;
+  max-width: 250px;
 }
