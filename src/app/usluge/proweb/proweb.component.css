@@ -1,0 +1,27 @@
+.vrh {
+  background-image: url("../../../../src/assets/images/dasneues.png");
+  background-size: cover;
+}
+.slika {
+  max-width: 700px;
+  max-height: 700px;
+}
+.text {
+  text-shadow: 2px 2px 4px gray;
+}
+.siviDio {
+  background-color: gray;
+}
+.naslov {
+  background-color: cornflowerblue;
+}
+.naslov2 {
+  background-color: green;
+
+}
+.hover:hover {
+  box-shadow: 0 0 15px white;
+}
+.primjer {
+  border-radius: 15px;
+}

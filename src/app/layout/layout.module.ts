@@ -16,6 +16,7 @@ import {
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {StickyNavModule} from 'ng2-sticky-nav/dist';
+import {CovalentLayoutModule} from '@covalent/core';
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import {StickyNavModule} from 'ng2-sticky-nav/dist';
     FlexLayoutModule,
     MatCardModule,
     StickyNavModule,
-
+    CovalentLayoutModule,
   ],
   exports: [
     MainLayoutComponent

@@ -65,7 +65,7 @@ tr:nth-child(even) {
 }
 .waccap {
   position: absolute;
-  top: 270px;
+  top: 220px;
   right: 15px;
   background-color: transparent;
   background-size: cover;
@@ -81,7 +81,7 @@ tr:nth-child(even) {
 }
 .youtube {
   position: absolute;
-  top: 350px;
+  top: 300px;
   right: 15px;
   background-color: transparent;
   background-size: cover;
