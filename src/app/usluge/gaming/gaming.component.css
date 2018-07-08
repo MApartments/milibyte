@@ -1,0 +1,20 @@
+.vrh {
+  background-image: url("../../../../src/assets/images/dasneues.png");
+  background-size: cover;
+}
+.text {
+  text-shadow: 2px 2px 4px gray;
+}
+.hover:hover {
+  box-shadow: 0 0 15px white;
+}
+.primjer {
+  border-radius: 15px;
+}
+.slika {
+  max-width: 700px;
+  max-height: 700px;
+}
+.siviDio {
+  background-color: gray;
+}

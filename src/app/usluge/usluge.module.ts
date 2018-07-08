@@ -8,6 +8,7 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import {StickyNavModule} from 'ng2-sticky-nav/dist';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatButtonModule, MatCardModule, MatDividerModule, MatListModule} from '@angular/material';
+import { GamingComponent } from './gaming/gaming.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,6 @@ import {MatButtonModule, MatCardModule, MatDividerModule, MatListModule} from '@
     MatDividerModule,
     MatListModule,
   ],
-  declarations: [UslugeComponent, ProwebComponent]
+  declarations: [UslugeComponent, ProwebComponent, GamingComponent]
 })
 export class UslugeModule { }
