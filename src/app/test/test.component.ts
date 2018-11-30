@@ -21,5 +21,6 @@ export class TestComponent implements OnInit {
 
   dodaj(proizvod: string) {
     console.log(proizvod);
+    this.products.push(proizvod);
   }
 }
