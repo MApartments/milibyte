@@ -1,3 +1,4 @@
+import { TestModule } from './test/test.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     FlexLayoutModule,
     HttpClientModule,
+    TestModule,
   ],
   exports: [
     FlexLayoutModule,
