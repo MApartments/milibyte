@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
+  products: string[] = [
+    'jabuka',
+    'krushka',
+    'jablani',
+   ]
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

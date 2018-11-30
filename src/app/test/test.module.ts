@@ -1,4 +1,4 @@
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatCardModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +11,7 @@ import { TestComponent } from './test.component';
     TestRoutingModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCardModule,
   ],
   declarations: [TestComponent]
 })
