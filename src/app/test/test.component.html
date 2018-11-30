@@ -5,5 +5,5 @@
   <button mat-button (click)="dodaj(proizvodPicker.value)">DODAJ</button>
 </p>
 <p>
-<mat-card *ngFor="let product of products">{{product}}</mat-card>
+<mat-card *ngFor="let product of products">{{product}}<button mat-button (click)="remove(product)">Remove product</button></mat-card>
 </p>

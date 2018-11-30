@@ -23,4 +23,9 @@ export class TestComponent implements OnInit {
     console.log(proizvod);
     this.products.push(proizvod);
   }
+  
+  remove(proizvod: string) {
+    this.products = this.products.filter(product => product !== proizvod);
+    console.log(proizvod);
+  }
 }
