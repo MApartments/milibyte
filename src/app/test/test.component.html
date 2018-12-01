@@ -2,7 +2,7 @@
   <mat-form-field>
     <input matInput #proizvodPicker placeholder="Unesi proizvod">
   </mat-form-field>
-  <button mat-button (click)="dodaj(proizvodPicker.value)">DODAJ</button>
+  <button [disabled]="checkIsEmptyString(proizvodPicker.value)" mat-button (click)="dodaj(proizvodPicker.value)">DODAJ</button>
 </p>
 <p>
 <mat-card *ngFor="let product of products">{{product}}<button mat-button (click)="remove(product)">Remove product</button></mat-card>
